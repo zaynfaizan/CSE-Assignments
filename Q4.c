@@ -1,57 +1,19 @@
 #include <stdio.h>
-//Program to print number as month
-void printMonthName(int month) {
-    switch (month) {
-        case 1:
-            printf("January\n");
-            break;
-        case 2:
-            printf("February\n");
-            break;
-        case 3:
+//Program to read 10 numbers from keyboard and finding their sum and average
+int main()
+{       
+    int i,n,sum=0;
+	float avg;
+	printf("Input the 10 numbers : \n");
+	for (i=1;i<=10;i++)
+	{
+                printf("Number-%d :",i);
 
-            printf("March\n");
-            break;
-        case 4:
-            printf("April\n");
-            break;
-        case 5:
-            printf("May\n");
-            break;
-        case 6:
-            printf("June\n");
-            break;
-        case 7:
-            printf("July\n");
-            break;
-        case 8:
-            printf("August\n");
-            break;
-        case 9:
-            printf("September\n");
-            break;
-        case 10:
-            printf("October\n");
-            break;
-        case 11:
-            printf("November\n");
-            break;
-        case 12:
-            printf("December\n");
-            break;
-        default:
-            printf("Invalid month number\n");
-            break;
-    }
+		scanf("%d",&n);
+		sum +=n;
+	}
+	avg=sum/10.0;
+	printf("The sum of 10 no is : %d\nThe Average is : %f\n",sum,avg);
+ 
 }
 
-int main() {
-    int month;
-
-    printf("Enter the month number (1-12): ");
-    scanf("%d", &month);
-
-    printMonthName(month);
-
-    return 0;
-}

@@ -1,27 +1,15 @@
-#include <stdio.h>
-// Program to find reverse of a 4 digit no and checking if palindrome or not
-int main() {
-    int num, originalNum, reverseNum = 0, remainder;
+//C Program to Find the Sum of first 10 Natural Numbers Using For loop
 
-    printf("Enter a 4-digit number: ");
-    scanf("%d", &num);
+#include<stdio.h>
+int main()
+{
+ 
+  int i, sum = 0;
 
-    originalNum = num;
-
-    // Reversing the number
-    while (num != 0) {
-        remainder = num % 10;
-        reverseNum = reverseNum * 10 + remainder;
-        num /= 10;
-    }
-
-    printf("Reverse of %d is: %d\n", originalNum, reverseNum);
-
-    if (originalNum == reverseNum) {
-        printf("%d is a palindrome.\n", originalNum);
-    } else {
-        printf("%d is not a palindrome.\n", originalNum);
-    }
-
-    return 0;
+  for(i=1;i<=10;i++)
+  {
+       sum = sum + i;
+  }
+  printf("Sum of first 10 Natural Numbers is : %d\n", sum);
+  return 0;
 }

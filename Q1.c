@@ -1,14 +1,12 @@
-#include<stdio.h>
-int main() {
-    //Program to check whether a number is even or odd 
-    int num;
-    printf("Enter an integer: ");
-    scanf("%d", &num);
-
-    if(num / 2 == 0)
-        printf("%d is even\n.", num);
-    else
-        printf("%d is odd\n.", num);
-    
+#include <stdio.h>
+//First 10 natural numbers using for loop
+int main()
+{
+	printf("The First 10 Natural Numbers are\n");
+	
+	for (int i = 1; i <= 10; i++)
+	{
+		printf("%d\n", i);
+	}
     return 0;
 }

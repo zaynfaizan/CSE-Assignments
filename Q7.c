@@ -1,18 +1,18 @@
-#include <stdio.h>
-// Program to find the quadrant in which a point lies
+#include<stdio.h>
+//Program to display the n terms of odd natural numbers and their sum
 int main()
 {
-  int x,y;
-    printf("Input the coordinate(x,y) without brackets and comma: \n");
-    scanf("%d",&x);
-    scanf("%d",&y);
-    if (x>0 && y>0)
-    printf("The coordinate point (%d,%d) lies in First Quadrant \n",x,y);
-    else if (x<0 && y>0)
-     printf("The coordinate point (%d,%d) lies in secound Quadrant\n ",x,y);
-     else if (x<0 && y<0)
-      printf("The coordinate point (%d,%d) lies in Third Quadrant \n",x,y);
-      else if (x>0 && y<0)
-       printf("The coordinate point (%d,%d) lies in Forth Quadrant\n ",x,y);
-       return 0;
-}       
+   int i,n,sum=0;
+
+   printf("Input number of terms : ");
+   scanf("%d",&n);
+   printf("\nThe odd numbers are :");
+   for(i=1;i<=n;i++)
+   {
+     printf("%d ",2*i-1);
+     sum+=2*i-1;
+   }
+   printf("\nThe Sum of odd Natural Number upto %d terms : %d \n",n,sum);
+   return 0;
+}
+

@@ -1,22 +1,16 @@
 #include <stdio.h>
-//Program to add digits of a 4 digit number
 int main()
 {
-   int num, q, sum = 0, remainder;
-
-   printf("Enter an integer\n");
-   scanf("%d", &num);
-
-   q = num;
-
-   while (q != 0)
+   int i,n,sum=0;
+   printf("Enter the value of n : ");
+   scanf("%d",&n);
+   printf("The first %d natural numbers are:\n",n);
+   for(i=1;i<=n;i++)
    {
-      remainder = q % 10;
-      sum       = sum + remainder;
-      q         = q / 10;
+     printf("%d ",i);
+     sum+=i;
    }
-
-   printf("Sum of digits of %d = %d\n", num, sum);
-
+   printf("\nThe Sum of natural numbers upto %d terms : %d \n",n,sum);
    return 0;
 }
+
