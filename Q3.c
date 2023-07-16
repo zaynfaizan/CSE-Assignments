@@ -1,4 +1,5 @@
 #include <stdio.h>
+//Program to find sum of natural numbers upto n
 int main()
 {
    int i,n,sum=0;
